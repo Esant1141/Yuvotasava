@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yuvotasava</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--  -->
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!--  -->
+    <link rel="stylesheet" href="css1/home.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* @charset "utf-8"; */
+
+
+    
+      #sidebar-wrapper {
+          z-index: 1000;
+          position: fixed;
+          /* right: 0; */
+          left: -250px;
+          width: 250px;
+          height: 100%;
+          margin-right: -250px;
+          overflow-y: auto;
+          background: #222;
+          -webkit-transition: all 0.4s ease-in-out 0s;
+          -moz-transition: all 0.4s ease-in-out 0s;
+          -ms-transition: all 0.4s ease-in-out 0s;
+          -o-transition: all 0.4s ease-in-out 0s;
+          transition: all 0.4s ease-in-out 0s;
+      }
+
+      #sidebar-wrapper.active {
+          left: 0px;
+          width: 250px;
+          -webkit-transition: all 0.4s ease 0s;
+          -moz-transition: all 0.4s ease 0s;
+          -ms-transition: all 0.4s ease 0s;
+          -o-transition: all 0.4s ease 0s;
+          transition: all 0.4s ease 0s;
+      }
+
+    
+      
+
+     
+
+
+    
+      #menu-toggle {
+          z-index: 801;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: auto;
+          margin-top: 39px !important;
+          margin-left: 20px !important;
+
+      }
+/* C:\Users\Dell\OneDrive\Desktop\frame\new vtu\new vtu\home.html */
+      .toggle {
+          margin: 5px 5px 0 0;
+      }
+/* C:\Users\Dell\OneDrive\Desktop\frame\new vtu\new vtu\home.html */
+      #to-top {
+          position: fixed;
+          right: 1.5%;
+          bottom: .5%;
+          z-index: 799;
+      }
+
+
+   
+  </style>
+
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <div class="">
+
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle "><i class="fa fa-bars"></i></a>
+        <a id="to-top" class="btn btn-lg btn-dark" href="#top">
+          <span class="sr-only">Toggle to Top Navigation</span>
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div>
+      <nav id="sidebar-wrapper">
+        <div class="row p-3">
+          <img class="logo1" src="images1/logo1.png" alt="" />
+          
+        </div>
+              <button class="buttons">
+                  <a href="home.html" class="btn-link"> HOME</a></button
+                ><br />
+                <button class="buttons">
+                  <a href="EVENT-SCHEDULE.html" class="btn-link"
+                    >EVENT SCHEDULE</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="event-summary.html" class="btn-link"
+                    >EVENT SUMMARY</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="detailed-rules.html" class="btn-link"
+                    >DETAILED RULES</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="general-ins.html" class="btn-link"
+                    >GENERAL INSTRUCTIONS</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="organization-com.html" class="btn-link"
+                    >ORGANISING COMMITEE</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="contact-us.html" class="btn-link">CONTACT US</a></button
+                ><br />
+                <button class="buttons">
+                  <a href="" class="btn-link"
+                    >LOGIN/REGISTRATION</a
+                  ></button
+                ><br />
+      </nav>
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <br /><br /><br />
+        <div class="row">
+          <div class="col-md-10 m-auto">
+            <!-- carousel start -->
+
+            <!-- Carousel wrapper -->
+            <div
+              id="carouselBasicExample"
+              class="carousel slide carousel-fade hw"
+              data-mdb-ride="carousel"
+            >
+              <!-- Indicators -->
+
+              <!-- Inner -->
+              <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                  <img
+                    class="car-img"
+                    src="images1/car1.jpg"
+                    alt="Sunset Over the City"
+                  />
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                  <img
+                    class="car-img"
+                    src="images1/car2.jpg"
+                    alt="Canyon at Nigh"
+                  />
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                  <img
+                    class="car-img"
+                    src="images1/car3.jpg"
+                    alt="Cliff Above a Stormy Sea"
+                  />
+                </div>
+              </div>
+              <!-- Inner -->
+
+              <!-- Controls -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-mdb-target="#carouselBasicExample"
+                data-mdb-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bgc"
+                  aria-hidden="true"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next extra"
+                type="button"
+                data-mdb-target="#carouselBasicExample"
+                data-mdb-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bgc"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+            <!-- Carousel wrapper -->
+
+            <!-- carousel end -->
+            <!-- timer start -->
+            <div id="timer" class="row">
+              <div class="col-md-8 m-auto">
+                <div class="row hundred">
+                  <div class="col-md-8 d-flex mt-5 m-auto opcty">
+                    <div class="time">
+                      <div id="days"></div>
+                      <span class="dhm">Days</span>
+                      <p></p>
+                    </div>
+                    
+                    <div class="time">
+                      <div id="hours"></div>
+                      <span class="dhm">Hours</span> <p></p>
+                    </div>
+                   
+                    <div class="time">
+                      <div id="minutes"></div>
+                      <span class="dhm"> Minutes </span> <p></p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- timer end -->
+            <div class="row mt-5 uy">
+              <div class="uyuy">
+                <span class="untl">Until &nbsp;</span>
+                <span class="yuvo">Yuvotasava</span>
+              </div>
+            </div>
+            <div class="row px-4 until">
+              <div class="row1">
+                <div class="column1">
+                  <div class="card1">
+                    <br /><br />
+                    <img class="c12" src="images1/uy1.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="column1">
+                  <div class="card1">
+                    <h3 class="about">About NCET</h3>
+                    <br />
+                    <p class="about-content">
+                      Nagarjuna College of Engineering and Technology (NCET), a
+                      self financing engineering college, was started in the
+                      year 2001 under the aegis of Nagarjuna Education Society,
+                      Bangalore. Nagarjuna Education Society (NES) was
+                      established in 1995 under the able guidance of Sri
+                      J.V.Rangaraju, leading industrialist and philanthropist.
+                      His commitment towards contribution to nation building is
+                      being achieved by imparting world-class education at all
+                      levels, viz. from primary, graduate, post-graduate to
+                      doctoral research degree.NCET is affiliated to VTU,
+                      Belagavi, recognized by Government of Karnataka(GoK) and
+                      approved by AICTE.
+                    </p>
+                    <br />
+                    <button class="know">Know More</button><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row px-4 mt-5 until">
+              <div class="row1">
+                <div class="column1">
+                  <div class="card1">
+                    <h3 class="about">About NCET</h3>
+                    <br />
+                    <p class="about-content">
+                      Nagarjuna College of Engineering and Technology (NCET), a
+                      self financing engineering college, was started in the
+                      year 2001 under the aegis of Nagarjuna Education Society,
+                      Bangalore. Nagarjuna Education Society (NES) was
+                      established in 1995 under the able guidance of Sri
+                      J.V.Rangaraju, leading industrialist and philanthropist.
+                      His commitment towards contribution to nation building is
+                      being achieved by imparting world-class education at all
+                      levels, viz. from primary, graduate, post-graduate to
+                      doctoral research degree.NCET is affiliated to VTU,
+                      Belagavi, recognized by Government of Karnataka(GoK) and
+                      approved by AICTE.
+                    </p>
+                    <br />
+                    <button class="know1">Know More</button><br />
+                  </div>
+                </div>
+                <div class="column12">
+                  <div class="card12">
+                    <br /><br />
+                    <img src="images1/vtu.png" class="c12" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-md-9 m-auto vtu22">
+                About 22nd VTU Youth Festival – Yuvotasava 2023
+              </div>
+            </div>
+            <div class="row mt-5">
+              <img src="images1/logo1.png" class="down" alt="" />
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-6 m-auto">
+                <p class="vtu-content">
+                  Visvesvaraya Technological University (VTU) is one of the
+                  largest Technological Universities in India with 24 years of
+                  tradition of excellence in Engineering & Technical Education,
+                  Research and Innovation. It came into existence in the year
+                  1998 to cater to the need of Indian industries for trained
+                  technical manpower with practical experience and sound
+                  theoretical knowledge. The University has very successfully
+                  achieved the tremendous task of bringing various colleges
+                  affiliated earlier to different Universities, with different
+                  syllabi, different procedures and different traditions under
+                  one umbrella.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="footer.js"></script>
+
+    <script>
+      var endDate = new Date("2023-03-28 23:59:59"); // set the end date for the countdown
+      var days = document.getElementById("days");
+      var hours = document.getElementById("hours");
+      var minutes = document.getElementById("minutes");
+
+      setInterval(function () {
+        var currentDate = new Date();
+        var timeLeft = (endDate - currentDate) / 1000;
+
+        days.innerHTML = Math.floor(timeLeft / 86400);
+        timeLeft = timeLeft % 86400;
+
+        hours.innerHTML = Math.floor(timeLeft / 3600);
+        timeLeft = timeLeft % 3600;
+
+        minutes.innerHTML = Math.floor(timeLeft / 60);
+      }, 1000);
+    </script>
+
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script> -->
+
+    
+    <script>
+      
+
+      $(document).ready(function () {
+
+        
+          $("#menu-close").click(function (e)						
+          {
+              
+              $("#sidebar-wrapper").toggleClass("active");			
+              e.preventDefault(); 								
+          });															
+          $("#menu-toggle").hover(function (e)							
+          {
+              $("#sidebar-wrapper").toggleClass("active", true);		
+              e.preventDefault();										
+          });
+
+          $("#menu-toggle").bind('click', function (e)					
+          {
+              $("#sidebar-wrapper").toggleClass("active", true);	
+              e.preventDefault();										
+          });															
+
+          $('#sidebar-wrapper').mouseleave(function (e)				
+       
+          {
+              
+              $('#sidebar-wrapper').toggleClass('active', false);		
+              e.stopPropagation();									
+              
+
+              e.preventDefault();										
+          });
+      });
+
+
+      $(document).ready(function () {
+
+          $('#to-top').bind('click', function () {
+              $('body,html').animate({
+                  scrollTop: 0
+              },
+                  2500);
+          });
+
+
+          $(function () {
+              $('a[href*=#]:not([href=#])').click(function () {
+                  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                      if (target.length) {
+                          $('html,body').animate({
+                              scrollTop: target.offset().top - 420
+                          }, 3500, 'easeOutBounce');
+                          return false;
+                      }
+                  }
+              });
+          });
+      });
+
+
+  </script>
+  </body>
+</html>

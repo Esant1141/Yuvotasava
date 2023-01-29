@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yuvotasava</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    /><!--  -->
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!--  -->
+    <link rel="stylesheet" href="css1/home.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* @charset "utf-8"; */
+
+
+    
+      #sidebar-wrapper {
+          z-index: 1000;
+          position: fixed;
+          /* right: 0; */
+          left: -250px;
+          width: 250px;
+          height: 100%;
+          margin-right: -250px;
+          overflow-y: auto;
+          background: #222;
+          -webkit-transition: all 0.4s ease-in-out 0s;
+          -moz-transition: all 0.4s ease-in-out 0s;
+          -ms-transition: all 0.4s ease-in-out 0s;
+          -o-transition: all 0.4s ease-in-out 0s;
+          transition: all 0.4s ease-in-out 0s;
+      }
+
+      #sidebar-wrapper.active {
+          left: 0px;
+          width: 250px;
+          -webkit-transition: all 0.4s ease 0s;
+          -moz-transition: all 0.4s ease 0s;
+          -ms-transition: all 0.4s ease 0s;
+          -o-transition: all 0.4s ease 0s;
+          transition: all 0.4s ease 0s;
+      }
+
+    
+      
+
+     
+      #menu-toggle {
+          z-index: 801;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: auto;
+          margin-top: 39px !important;
+          margin-left: 20px !important;
+
+      }
+
+      .toggle {
+          margin: 5px 5px 0 0;
+      }
+
+      #to-top {
+          position: fixed;
+          right: 1.5%;
+          bottom: .5%;
+          z-index: 799;
+      }
+
+
+   
+  </style>
+
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <div class="">
+
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle "><i class="fa fa-bars"></i></a>
+        <a id="to-top" class="btn btn-lg btn-dark" href="#top">
+          <span class="sr-only">Toggle to Top Navigation</span>
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div>
+      <nav id="sidebar-wrapper">
+        <div class="row p-3">
+          <img class="logo1" src="images1/logo1.png" alt="" />
+          
+        </div>
+              <button class="buttons">
+                  <a href="home.html" class="btn-link"> HOME</a></button
+                ><br />
+                <button class="buttons">
+                  <a href="EVENT-SCHEDULE.html" class="btn-link"
+                    >EVENT SCHEDULE</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="event-summary.html" class="btn-link"
+                    >EVENT SUMMARY</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="detailed-rules.html" class="btn-link"
+                    >DETAILED RULES</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="general-ins.html" class="btn-link"
+                    >GENERAL INSTRUCTIONS</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="organization-com.html" class="btn-link"
+                    >ORGANISING COMMITEE</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="contact-us.html" class="btn-link">CONTACT US</a></button
+                ><br />
+                <button class="buttons">
+                  <a href="" class="btn-link"
+                    >LOGIN/REGISTRATION</a
+                  ></button
+                ><br />
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5"><br><br><br>
+        <div class="row">
+          <div class="col-md-10 m-auto">
+            <div class="row p-1">
+              <div class="col-md-12 clm">
+                <img src="images1/yvt.jpg" class="yvt" alt="" />
+              </div>
+              <div class="row mt-4">
+                <center><p class="musicevent">EVENT RULES</p></center>
+              </div>
+            </div>
+
+            <div class="row px-5 mt-4 wor1">
+              <center class="musicji">MUSIC</center>
+              <div class="col-md-12 m-auto col0">
+                <div class="row col0">
+                  <div class="col-md-3 m-auto text-center col0">
+                    <button id="on1" onclick="click1()" class="btn-det active">
+                      <b class="abcd"> Classical Vocal Solo</b>
+                      (Hindustani/Carnatic)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on2" onclick="click2()" class="btn-det">
+                      <b class="abcd"> Classical Instrumental Solo</b>
+                      <br />
+                      (Non-Percussion Swara Vadya)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on3" onclick="click3()" class="btn-det">
+                      <b class="abcd">Classical Vocal Solo</b><br />
+                      (Hindustani/Carnatic)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on4" onclick="click4()" class="btn-det">
+                      <b class="abcd"> Light Vocal Solo</b><br />
+                      (Indian)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on5" onclick="click5()" class="btn-det">
+                      <b class="abcd"> Western Vocal Solo</b>
+                      <!-- (Hindustani/Carnatic) -->
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on6" onclick="click6()" class="btn-det">
+                      <b class="abcd">Group Song</b><br />
+                      (Indian)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on7" onclick="click7()" class="btn-det">
+                      <b class="abcd">Group Song</b><br />
+                      (Western)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on8" onclick="click8()" class="btn-det">
+                      <b class="abcd"> Folk Orchestra</b>
+                    </button>
+                    <hr class="hrhr" />
+                  </div>
+                  <div class="col-md-9 col0 hello">
+                    <div id="c1">
+                      <ol id="demo" class="pddd">
+                      
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <!-- dance -->
+
+            <div class="row px-5 wor2">
+              <center class="musicji">DANCE</center>
+              <div class="col-md-12 m-auto col0">
+                <div class="row col0">
+                  <div class="col-md-3 m-auto text-center col0">
+                    <button id="on1" onclick="click1d()" class="btn-det active">
+                      <b class="abcd"> Folk / Tribal Dance</b>
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on2" onclick="click2d()" class="btn-det">
+                      <b class="abcd"> Classical Dance Solo</b>
+                    </button>
+
+                    <hr class="hrhr" />
+                  </div>
+                  <div class="col-md-9 col0 hello">
+                    <div id="c2">
+                      <ol id="demo2" class="pddd">
+                      
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+            <!-- d e -->
+
+            <!-- l s -->
+
+            <div class="row px-5 wor3">
+              <center class="musicji">LITERARY</center>
+              <div class="col-md-12 m-auto col0">
+                <div class="row col0">
+                  <div class="col-md-3 m-auto text-center col0">
+                    <button id="on1" onclick="click1l()" class="btn-det active">
+                      <b class="abcd"> Quiz</b>
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on2" onclick="click2l()" class="btn-det">
+                      <b class="abcd"> Debate</b>
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on3" onclick="click3l()" class="btn-det">
+                      <b class="abcd">Elocution</b>
+                    </button>
+                    <hr class="hrhr" />
+                  </div>
+                  <div class="col-md-9 col0 hello">
+                    <div id="c3">
+                      <ol id="demo3" class="pddd">
+                      
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+            <!-- l e -->
+            <!-- th s  -->
+
+            <div class="row px-5 wor4">
+              <center class="musicji">THEATRE</center>
+              <div class="col-md-12 m-auto col0">
+                <div class="row col0">
+                  <div class="col-md-3 m-auto text-center col0">
+                    <button id="on1" onclick="click1t()" class="btn-det active">
+                      <b class="abcd">Skit</b>
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on2" onclick="click2t()" class="btn-det">
+                      <b class="abcd"> Mime</b>
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on3" onclick="click3t()" class="btn-det">
+                      <b class="abcd">Mimicry</b>
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on4" onclick="click4t()" class="btn-det">
+                      <b class="abcd">One Act Play </b>
+                    </button>
+                    <hr class="hrhr" />
+                  </div>
+                  <div class="col-md-9 col0 hello">
+                    <div id="c4">
+                      <ol id="demo4" class="pddd">
+                      
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+
+            <!-- th e  -->
+
+            <!-- f a  -->
+            <div class="row px-5 wor5">
+              <center class="musicji">FINE-ARTS</center>
+              <div class="col-md-12 m-auto col0">
+                <div class="row col0">
+                  <div class="col-md-3 m-auto text-center col0">
+                    <button id="on1" onclick="click1f()" class="btn-det active">
+                      <b class="abcd"> Classical Vocal Solo</b>
+                      (Hindustani/Carnatic)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on2" onclick="click2f()" class="btn-det">
+                      <b class="abcd"> Classical Instrumental Solo</b>
+                      <br />
+                      (Non-Percussion Swara Vadya)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on3" onclick="click3f()" class="btn-det">
+                      <b class="abcd">Classical Vocal Solo</b><br />
+                      (Hindustani/Carnatic)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on4" onclick="click4f()" class="btn-det">
+                      <b class="abcd"> Light Vocal Solo</b><br />
+                      (Indian)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on5" onclick="click5f()" class="btn-det">
+                      <b class="abcd"> Western Vocal Solo</b>
+                      <!-- (Hindustani/Carnatic) -->
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on6" onclick="click6f()" class="btn-det">
+                      <b class="abcd">Group Song</b><br />
+                      (Indian)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on7" onclick="click7f()" class="btn-det">
+                      <b class="abcd">Group Song</b><br />
+                      (Western)
+                    </button>
+                    <hr class="hrhr" />
+                    <button id="on8" onclick="click8f()" class="btn-det">
+                      <b class="abcd"> Folk Orchestra</b>
+                    </button>
+                    <hr class="hrhr" />
+                  </div>
+                  <div class="col-md-9 col0 hello">
+                    <div id="c5">
+                      <ol id="demo5" class="pddd">
+                      
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="footer.js"></script>
+
+    <script>
+      var endDate = new Date("2023-03-28 23:59:59"); // set the end date for the countdown
+      var days = document.getElementById("days");
+      var hours = document.getElementById("hours");
+      var minutes = document.getElementById("minutes");
+
+      setInterval(function () {
+        var currentDate = new Date();
+        var timeLeft = (endDate - currentDate) / 1000;
+
+        days.innerHTML = Math.floor(timeLeft / 86400);
+        timeLeft = timeLeft % 86400;
+
+        hours.innerHTML = Math.floor(timeLeft / 3600);
+        timeLeft = timeLeft % 3600;
+
+        minutes.innerHTML = Math.floor(timeLeft / 60);
+      }, 1000);
+    </script>
+    <script>
+      function click1() {document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+
+        document.getElementById(
+          "demo"
+        ).innerHTML = ` <li ><b>Participation: Only 1 participant per institute.</b></li>
+          <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+          <li><b>Maximum of 2 accompaniments are allowed, excluding a Shruthi box.</b></li>
+          <li><b>Karaoke is strictly not allowed.</b></li>
+          <li><b>The item can be presented in either Hindustani or Carnatic style.</b></li>
+          <li><b>Film songs are not allowed for this competition.</b></li>
+          <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+          <li><b>Sufficient thought and care must be exercised in the choice of Raga and composition.</b></li>
+          <li><b>
+            Decision of the panel of judges will be final and binding upon all.
+          </b></li>`;
+      }
+
+      function click2() {
+        document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo"
+        ).innerHTML = `<li ><b>Participation: Only 1 participant per institute.</b></li>
+          <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+          <li><b>Maximum of 2 accompaniments are allowed, excluding a Shruthi box.</b></li>
+          <li><b>Participants shall bring their own instruments. Keyboards are not allowed.</b></li>
+          <li><b>The item can be presented in either Hindustani or Carnatic style.</b></li>
+          
+          <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+          <li><b>Decisions of the organizers and panel of judge(s) will be final and binding.</b></li>
+          `;
+      }
+      function click3() {document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo"
+        ).innerHTML = ` <li ><b>Participation: Only 1 participant per institute.</b></li>
+          <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+          <li><b>Maximum of 2 accompaniments are allowed, excluding a Shruthi box.</b></li>
+          <li><b> Participants shall bring their own instruments. Keyboards are not allowed.</b></li>
+          <li><b>The item can be presented in either Hindustani or Carnatic style.</b></li>
+          <li><b>Instruments of western origin adopted to the Indian Raga system are allowed.</b></li>
+          <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+        
+          <li><b>  Decision of the panel of judges will be final and binding upon all.
+          </b></li>`;
+      }
+      function click4() {document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo"
+        ).innerHTML = `<li ><b>Participation: Only 1 participant per institute.</b></li>
+          <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+          <li><b>Maximum of 2 accompaniments are allowed, excluding a Shruthi box.</b></li>
+          <li><b>  Only non-film songs can be presented. [Examples: Geet, Ghazal, Bhajan, Bhavageethe, Shabad and Abhangs].</b></li>
+          <li><b> Karaoke is strictly not allowed..</b></li>
+         
+          <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+        
+          <li><b>   Decision of the panel of judges will be final and binding upon all.
+          </b></li>`;
+      }
+      function click5() {document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo"
+        ).innerHTML = `<li ><b>Participation: Only 1 participant per institute.</b></li>
+          <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+          <li><b>Maximum of 2 accompaniments are allowed, excluding a Shruthi box.</b></li>
+          <li><b> The song(s) must only be in English.</b></li>
+          <li><b>Karaoke or Programmed Music is strictly not allowed.</b></li>
+         
+          <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+          <li><b>
+            Decision of the panel of judges will be final and binding upon all.
+          </b></li>`;
+      }
+      function click6() {document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo"
+        ).innerHTML = `<li ><b>Participation: Only 1 participant per institute.</b></li>
+          <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+          <li><b>Maximum of 2 accompaniments are allowed, excluding a Shruthi box.</b></li>
+          <li><b> A team has to present two songs, one patriotic and one folk.</b></li>
+          <li><b>Only Indian languages will be used for group songs. The lyrics of the songs transliterated in English must be submitted at the reporting time to the event incharge.</b></li>
+         <li><b> Film songs are strictly not allowed.</b></li>
+          <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+        
+          <li><b>  Decision of the panel of judges will be final and binding upon all.
+          </b></li>`;
+      }
+      function click7() {document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo"
+        ).innerHTML = `<li ><b>Participation: Only 1 participant per institute.</b></li>
+          <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+          <li><b>A maximum of 3 accompanists are allowed. They should be dressed differently from the participants for ease of identification.</b></li>
+          <li><b>The accompanists shall sit or stand separately from the participants and shall not lead the team.</b></li>
+          <li><b>The team should present only folk tunes, preferably the ones recognized as folk tunes of Karnataka.</b></li>
+         <li><b>Vocal singing is not allowed, however teams may use vocal punctuations as a chorus.</li>
+          
+          <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+        
+          <li><b>  Decision of the panel of judges will be final and binding upon all.
+          </b></li>`;
+      }
+      function click8() {document.getElementById('c1').style.display="block"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById("demo").innerHTML = `<li><b>
+              Participation: Only 1 team (upto 12 participants) per institute.
+            </b></li>
+            <li><b>
+              Duration: 15 minutes (including set-up and clearance time).
+            </b></li>
+            <li><b>
+              A maximum of 3 accompanists are allowed. They should be dressed differently from the participants for ease of identification.
+            </b></li>
+            <li><b>
+              The accompanists shall sit or stand separately from the participants and shall not lead the team.
+            </b></li>
+            <li><b>
+              The team should present only folk tunes, preferably the ones recognized as folk tunes of Karnataka.
+            </b></li>
+            <li><b>
+              Vocal singing is not allowed, however teams may use vocal punctuations as a chorus.
+            </b></li>
+            <li><b>
+              Use of musical instruments backed by electrical power, amplifiers, etc., are not allowed.
+            </b></li>
+            <li><b>
+              Reporting time will be provided along with the schedule of the event.
+            </b></li>
+            <li><b>
+              Decisions of the organizers and panel of judge(s) will be final and binding.
+            </b></li>`;
+      }
+    </script>
+    <script>
+      var buttons = document.querySelectorAll(".btn-det");
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          buttons.forEach(function (btn) {
+            btn.classList.remove("active");
+          });
+          button.classList.add("active");
+        });
+      });
+    </script>
+
+    <script>
+      function click1d() {document.getElementById('c2').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo2"
+        ).innerHTML = `<li ><b>Participation: Only 1 participant per institute.</b></li>
+            <li><b>Duration: 15 minutes (including set-up and clearance time).</b></li>
+            <li><b>A maximum of 5 accompanists are allowed.</b></li>
+            <li><b> The dance form can be either folk or tribal (Indian Style) but not a classical form.</b></li>
+            <li><b>Three copies, containing a brief description of the performance is to be submitted in a typed format in English at the reporting time to the event incharge.</b></li>
+            <li><b>Pre-recorded music in MP3 format is to be submitted in a pendrive at the reporting time to the event incharge.</b></li>
+           
+            <li><b>The participating team will be entirely responsible for removal of their sets, props, etc., immediately after the completion of their performance.</b></li>
+            <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+            <li><b>
+              Decision of the panel of judges will be final and binding upon all.
+            </b></li>`;
+      }
+
+      function click2d() {document.getElementById('c2').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo2"
+        ).innerHTML = `<li ><b>Participation: Only 1 participant per institute.</b></li>
+            <li><b>Duration: Maximum 12 minutes (including set-up and clearance time).</b></li>
+            <li><b>A maximum of 3 accompanist is allowed.</b></li>
+            <li><b> The classical dance can be from any of the approved schools of dance such as Kathak, Kathakali, Bharat Natyam, Sattriya, Manipuri, Kuchipudi, Mohiniattam, Odissi and Chhau.</b></li>
+            <li><b>Three copies, containing a brief description of the performance is to be submitted in a typed format in English at the reporting time to the event incharge.</b></li>
+            <li><b>Pre-recorded music in MP3 format is to be submitted in a pendrive at the reporting time to the event incharge.</b></li>
+           
+
+            <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+            <li><b>
+              Decision of the panel of judges will be final and binding upon all.
+            </b></li>`;
+      }
+
+      function click1l() {document.getElementById('c3').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById(
+          "demo3"
+        ).innerHTML = `<li ><b>Participation: Only 1 Team (upto 3 participants) per institute.</b></li>
+            <li><b>There will be a written preliminary round through which teams will be selected for the final round.</b></li>
+            <li><b>Finals will be in standard quizzing format which will be explained by the quiz master.</b></li>
+            <li><b>The specific rules regarding evaluation procedure, time to reply to a particular question and the type of round will be given before the start of the round.</b></li>
+          
+            <li><b>Reporting time will be provided along with the schedule of the event.</b></li>
+           
+              Decision of the panel of judges will be final and binding upon all.
+            </b></li>`;
+      }
+      function click2l() {document.getElementById('c3').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById("demo3").innerHTML = `
+<li><strong>Participation:</strong> Only 1 Team of 2 participants per institute.</li>
+<li><strong>Duration:</strong> 5 minutes per speaker (10 minutes per team).</li>
+<li><strong>The competition will be held in two rounds, preliminary and finals.</strong></li>
+<li><strong>The final round will follow British Parliamentary debate format.</strong></li>
+<li><strong>The topics for both rounds will be given on spot with appropriate preparation time.</strong></li>
+<li><strong>Only English shall be the medium of presentation.</strong></li>
+<li><strong>Teams will alternate between speakers.</strong></li>
+<li><strong>Reading off a paper is not allowed.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decision of the organizers and the panel of judge(s) will be final and binding.</strong></li>
+
+`;
+      }
+
+      function click3l() {document.getElementById('c3').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById("demo3").innerHTML = `
+    
+<li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 5 minutes.</li>
+<li><strong>The participant shall present either prose or poetry and not a song.</strong></li>
+<li><strong>The sequence of speakers will be decided by a draw of lots.</strong></li>
+<li><strong>Medium of expression shall be English only.</strong></li>
+<li><strong>Subject/Topic of elocution will be announced a day in advance.</strong></li>
+<li><strong>Reading off a paper is allowed but not recommended, and will adversely affect points.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decision of the organizers and the panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+
+      function click1t() {document.getElementById('c4').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById("demo4").innerHTML = `
+    
+    <li><strong>Participation:</strong> Only 1 Team (upto 6 participants) per institute.</li>
+<li><strong>Duration:</strong> 10 minutes (including set-up and clearance time).</li>
+<li><strong>A maximum of 3 accompanists are allowed.</strong></li>
+<li><strong>Use of make-up, backdrops and background music is allowed.</strong></li>
+<li><strong>Each team should submit three copies of the synopsis of the skit in the language of presentation (English, Hindi or Kannada) at the reporting time to the event incharge.</strong></li>
+<li><strong>Defamation, derogation and belittlement will not be entertained.</strong></li>
+<li><strong>Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is accepted.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organisers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+      function click2t() {document.getElementById('c4').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById("demo4").innerHTML = `
+    
+
+    <li><strong>Participation:</strong> Only 1 Team (upto 6 participants) from each institute.</li>
+<li><strong>Duration:</strong> 6 minutes.</li>
+<li><strong>A maximum of 2 accompanists are allowed.</strong></li>
+<li><strong>Background music is to be pre-recorded and submitted in a pendrive in MP3 format at the reporting time to the event incharge.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+      function click3t() {document.getElementById('c4').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById("demo4").innerHTML = `
+    
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 5 minutes.</li>
+<li><strong>Participants may mimic voices and speech of well known personalities, as well as other common sounds.</strong></li>
+<li><strong>Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is accepted.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+      function click4t() {document.getElementById('c4').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById('c5').style.display="none"
+        document.getElementById("demo4").innerHTML = `
+    
+
+    <li><strong>Participation:</strong> Only 1 Team (upto 9 participants) per institute.</li>
+<li><strong>Duration:</strong> 30 minutes (performance time) + 10 minutes (set-up and clearance time).</li>
+<li><strong>A maximum of 3 musical accompanists and 2 technical accompanists are allowed.</strong></li>
+<li><strong>Lighting, and basic furniture will be provided on prior request (subject to availability). All other props and paraphernalia such as costumes, make up, stage decorations, backdrops, etc., shall be the responsibility of the team.</strong></li>
+<li><strong>The preferred language for the act would be English, Hindi or Kannada. The synopsis of the play in English, Hindi or Kannada must be submitted at the reporting time to the event incharge.</strong></li>
+<li><strong>Accompanists shall either speak from the background or play upon musical instruments for background music. They shall be required to appear on the stage only during curtain call.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+`;
+      }
+
+      function click1f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 2 hours 30 minutes.</li>
+<li><strong>The artwork shall be made on the spot on the given topic.</strong></li>
+<li><strong>Only one standard A2 size paper will be provided by the host institute.</strong></li>
+<li><strong>Collage has to be prepared from old magazines, newspapers, paints and markers only.</strong></li>
+<li><strong>Participants shall bring their own scissors, glue, magazines, newspapers and other materials required for the contest.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+      function click2f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 2 hours 30 minutes.</li>
+<li><strong>Participants shall bring their own material.</strong></li>
+<li><strong>The participants shall prepare a Rangoli within the space provided by the organizers, by free hand only.</strong></li>
+<li><strong>Only one of the following medium shall be used - Poster Colours, Flower Petals, Saw-dust, Pulses or Rice without pasting.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decision of the panel of judges will be final and binding.</strong></li>
+
+`;
+      }
+      function click3f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 2 hours 30 minutes.</li>
+<li><strong>The artwork will be made on the spot on the given topic/idea.</strong></li>
+<li><strong>Only one standard A2 size paper will be provided by the host institute.</strong></li>
+<li><strong>All writing or drawing instruments have to be brought by the participant.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+      function click4f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+
+    <li><strong>Participation:</strong> Only 1 team (up to 4 participants) per institute.</li>
+<li><strong>Duration:</strong> 2 hours 30 minutes.</li>
+<li><strong>The artwork shall be made on the spot on the given topic.</strong></li>
+<li><strong>Materials or products required for the competition shall be brought by the participant. They can also use material which they use in other art compositions like Cartooning, Painting, Rangoli, Poster Making, Collage and Clay Modeling.</strong></li>
+<li><strong>Participants can also use waste materials which are available in the surroundings. However, they are not allowed to use any already composed images1 or forms available in the market. They should compose or create their own image with the raw material.</strong></li>
+<li><strong>The space for the installation shall be provided by the host institute.</strong></li>
+<li><strong>The participant shall create and install an atmosphere related to the subject or title of the installation in the assigned area. The maximum size of the installation shall be 5'x 5'x 5'.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+`;
+      }
+      function click5f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 2 hours 30 minutes.</li>
+<li><strong>The artwork will be made on the spot on the given topic.</strong></li>
+<li><strong>Only one standard A2 size paper will be provided by the host institute.</strong></li>
+<li><strong>The participant shall bring their own scissors, glue and other materials required for the event.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+`;
+      }
+      function click6f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 2 hours 30 minutes.</li>
+<li><strong>The artwork will be made on the spot on the given topic.</strong></li>
+<li><strong>The topics and other specific rules shall be announced on the spot.</strong></li>
+<li><strong>2 kg of natural clay shall be provided by the host institute. No additional clay can be used.</strong></li>
+<li><strong>Die and moulds are strictly not allowed.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+      function click7f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 2 hours 30 minutes.</li>
+<li><strong>The artwork shall be made on the spot on the given topic.</strong></li>
+<li><strong>Only one standard A2 size paper will be provided by the host institute.</strong></li>
+<li><strong>Types of paints allowed are watercolors, poster paints, oil paints and pastel colors.</strong></li>
+<li><strong>Candidates shall bring their own materials such as brushes, paints, palettes, etc.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+      function click8f() {document.getElementById('c5').style.display="block"
+        document.getElementById('c1').style.display="none"
+        document.getElementById('c3').style.display="none"
+        document.getElementById('c4').style.display="none"
+        document.getElementById('c2').style.display="none"
+        document.getElementById("demo5").innerHTML = `
+    
+
+    <li><strong>Participation:</strong> Only 1 participant per institute.</li>
+<li><strong>Duration:</strong> 4 hours.</li>
+<li><strong>The participant shall get their own digital camera and memory card. The memory card shall be formatted by the judges before the commencement of the contest.</strong></li>
+<li><strong>Mobile phones, drones and other forms of image capturing technologies are not allowed.</strong></li>
+<li><strong>The participant has to capture 5 photographs on the theme announced on the spot by the judges.</strong></li>
+<li><strong>No mixing, matching or morphing of photographs will be permitted.</strong></li>
+<li><strong>Image manipulation software such as Photoshop, Gimp, etc. for enhancing images1 are not permitted.</strong></li>
+<li><strong>The subject of the photo should be within defined geographic limits.</strong></li>
+<li><strong>The organizers shall have the rights for the use of these pictures at their discretion.</strong></li>
+<li><strong>Any additional instructions will be announced on the spot.</strong></li>
+<li><strong>Reporting time will be provided along with the schedule of the event.</strong></li>
+<li><strong>Decisions of the organizers and panel of judge(s) will be final and binding.</strong></li>
+
+
+`;
+      }
+    </script>
+     <script>
+      
+
+      $(document).ready(function () {
+
+        
+          $("#menu-close").click(function (e)						
+          {
+              
+              $("#sidebar-wrapper").toggleClass("active");			
+              e.preventDefault(); 								
+          });															
+          $("#menu-toggle").hover(function (e)							
+          {
+              $("#sidebar-wrapper").toggleClass("active", true);		
+              e.preventDefault();										
+          });
+
+          $("#menu-toggle").bind('click', function (e)					
+          {
+              $("#sidebar-wrapper").toggleClass("active", true);	
+              e.preventDefault();										
+          });															
+
+          $('#sidebar-wrapper').mouseleave(function (e)				
+       
+          {
+              
+              $('#sidebar-wrapper').toggleClass('active', false);		
+              e.stopPropagation();									
+              
+
+              e.preventDefault();										
+          });
+      });
+
+
+      $(document).ready(function () {
+
+          $('#to-top').bind('click', function () {
+              $('body,html').animate({
+                  scrollTop: 0
+              },
+                  2500);
+          });
+
+
+          $(function () {
+              $('a[href*=#]:not([href=#])').click(function () {
+                  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                      if (target.length) {
+                          $('html,body').animate({
+                              scrollTop: target.offset().top - 420
+                          }, 3500, 'easeOutBounce');
+                          return false;
+                      }
+                  }
+              });
+          });
+      });
+
+
+  </script>
+  </body>
+</html>

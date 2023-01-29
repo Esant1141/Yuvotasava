@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yuvotasava</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    /> <!--  -->
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!--  -->
+    <link rel="stylesheet" href="css1/home.css" />
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+  ></script> <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* @charset "utf-8"; */
+
+
+    
+      #sidebar-wrapper {
+          z-index: 1000;
+          position: fixed;
+          /* right: 0; */
+          left: -250px;
+          width: 250px;
+          height: 100%;
+          margin-right: -250px;
+          overflow-y: auto;
+          background: #222;
+          -webkit-transition: all 0.4s ease-in-out 0s;
+          -moz-transition: all 0.4s ease-in-out 0s;
+          -ms-transition: all 0.4s ease-in-out 0s;
+          -o-transition: all 0.4s ease-in-out 0s;
+          transition: all 0.4s ease-in-out 0s;
+      }
+
+      #sidebar-wrapper.active {
+          left: 0px;
+          width: 250px;
+          -webkit-transition: all 0.4s ease 0s;
+          -moz-transition: all 0.4s ease 0s;
+          -ms-transition: all 0.4s ease 0s;
+          -o-transition: all 0.4s ease 0s;
+          transition: all 0.4s ease 0s;
+      }
+
+    
+      
+
+     
+      #menu-toggle {
+          z-index: 801;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: auto;
+          margin-top: 39px !important;
+          margin-left: 20px !important;
+
+      }
+
+      .toggle {
+          margin: 5px 5px 0 0;
+      }
+
+      #to-top {
+          position: fixed;
+          right: 1.5%;
+          bottom: .5%;
+          z-index: 799;
+      }
+
+
+   
+  </style>
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <div class="">
+
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle "><i class="fa fa-bars"></i></a>
+        <a id="to-top" class="btn btn-lg btn-dark" href="#top">
+          <span class="sr-only">Toggle to Top Navigation</span>
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div>
+      <nav id="sidebar-wrapper">
+        <div class="row p-3">
+          <img class="logo1" src="images1/logo1.png" alt="" />
+          
+        </div>
+              <button class="buttons">
+                  <a href="home.html" class="btn-link"> HOME</a></button
+                ><br />
+                <button class="buttons">
+                  <a href="EVENT-SCHEDULE.html" class="btn-link"
+                    >EVENT SCHEDULE</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="event-summary.html" class="btn-link"
+                    >EVENT SUMMARY</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="detailed-rules.html" class="btn-link"
+                    >DETAILED RULES</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="general-ins.html" class="btn-link"
+                    >GENERAL INSTRUCTIONS</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="organization-com.html" class="btn-link"
+                    >ORGANISING COMMITEE</a
+                  ></button
+                ><br />
+                <button class="buttons">
+                  <a href="contact-us.html" class="btn-link">CONTACT US</a></button
+                ><br />
+                <button class="buttons">
+                  <a href="" class="btn-link"
+                    >LOGIN/REGISTRATION</a
+                  ></button
+                ><br />
+      </nav>
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5"><br><br><br>
+        <div class="row">
+          <div class="col-md-10 m-auto ">
+          
+            <div class="row mt-5">
+              
+              <center class="even">Event Summary</center>
+            </div>
+  
+            <div class="row mt-4">
+              <center><p class="music">Music</p></center>
+            </div>
+  
+            <div class="row px-4">
+              <!--   -->
+              <table class="table text-white py-3">
+                <thead>
+                  <tr class="hed">
+                    <th scope="col">Event Name</th>
+                    <th scope="col">No. Of Participants - P</th>
+                    <th scope="col">	No. Of Accompanists - A</th>
+                    <th scope="col">	P + A	</th>
+                    <th scope="col">	Time (min)</th>  
+                  </tr>
+                </thead>
+                <tbody class="pad"> 
+                  <tr>
+                    <td >Classical Vocal Solo <br>
+                      (Hindustani/Carnatic)</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>15</td>
+                  </tr>
+                  
+                  <tr>
+                    <td >Classical Instrumental Solo <br>
+                      (Percussion Tala Vadya)	</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>15</td>
+                  </tr>
+                 
+                  <tr>
+                    <td >Classical Instrumental Solo <br>
+                      (Non-Percussion Swara Vadya)</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td > Light Vocal Solo <br> (Indian)</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td >Western Vocal Solo</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td > Group Song <br> (Indian)	</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td > Group Song <br> (Western)	</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td > Folk Orchestra</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>15</td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row mt-4">
+              <center><p class="music">Dance</p></center>
+            </div>
+            <div class="row px-4">
+               
+              <table class="table text-white py-3">
+                <thead>
+                  <tr class="hed">
+                    <th scope="col">Event Name</th>
+                    <th scope="col">No. Of Participants - P</th>
+                    <th scope="col">	No. Of Accompanists - A</th>
+                    <th scope="col">	P + A	</th>
+                    <th scope="col">	Time (min)</th>  
+                  </tr>
+                </thead>
+                <tbody class="pad"> 
+                  <tr>
+                    <td >Folk / Tribal Dance	</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>15</td>
+                  </tr>
+                  
+                  <tr>
+                    <td >Classical Dance Solo	</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>12</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+            <div class="row mt-4">
+              <center><p class="music">Literary</p></center>
+            </div>
+            <div class="row px-4">
+               
+              <table class="table text-white py-3">
+                <thead>
+                  <tr class="hed">
+                    <th scope="col">Event Name</th>
+                    <th scope="col">No. Of Participants - P</th>
+                    <th scope="col">	No. Of Accompanists - A</th>
+                    <th scope="col">	P + A	</th>
+                    <th scope="col">	Time (min)</th>  
+                  </tr>
+                </thead>
+                <tbody class="pad"> 
+                  <tr>
+                    <td >Quiz	</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                  </tr>
+                  
+                  <tr>
+                    <td >Debate	</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td >Elocution	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+            <div class="row mt-4">
+              <center><p class="music">Theatre</p></center>
+            </div>
+            <div class="row px-4">
+               
+              <table class="table text-white py-3">
+                <thead>
+                  <tr class="hed">
+                    <th scope="col">Event Name</th>
+                    <th scope="col">No. Of Participants - P</th>
+                    <th scope="col">	No. Of Accompanists - A</th>
+                    <th scope="col">	P + A	</th>
+                    <th scope="col">	Time (min)</th>  
+                  </tr>
+                </thead>
+                <tbody class="pad"> 
+                  <tr>
+                    <td >Skit	</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>10</td>
+                  </tr>
+                  
+                  <tr>
+                    <td >Mime	</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td >Mimicry	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                  </tr>
+  
+                  <tr>
+                    <td >One Act Play	</td>
+                    <td>9</td>
+                    <td>5</td>
+                    <td>14</td>
+                    <td>30</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+            <div class="row mt-4">
+              <center><p class="music">Fine Arts</p></center>
+            </div>
+            <div class="row px-4">
+               
+              <table class="table text-white py-3">
+                <thead>
+                  <tr class="hed">
+                    <th scope="col">Event Name</th>
+                    <th scope="col">No. Of Participants - P</th>
+                    <th scope="col">	No. Of Accompanists - A</th>
+                    <th scope="col">	P + A	</th>
+                    <th scope="col">	Time (min)</th>  
+                  </tr>
+                </thead>
+                <tbody class="pad"> 
+                  <tr>
+                    <td >Collage	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>150</td>
+                  </tr>
+                  
+                  <tr>
+                    <td >Rangoli	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td >Cartooning	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>150</td>
+                  </tr>
+  
+                  <tr>
+                    <td >Installation	</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td >Poster Making	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>150</td>
+                  </tr>
+  
+                  <tr>
+                    <td >Clay Modelling	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td >On Spot Painting</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td >Spot Photography	</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>150</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="footer.js"></script>
+    
+    <script>
+      var endDate = new Date("2023-03-28 23:59:59"); // set the end date for the countdown
+      var days = document.getElementById("days");
+      var hours = document.getElementById("hours");
+      var minutes = document.getElementById("minutes");
+
+      setInterval(function () {
+        var currentDate = new Date();
+        var timeLeft = (endDate - currentDate) / 1000;
+
+        days.innerHTML = Math.floor(timeLeft / 86400);
+        timeLeft = timeLeft % 86400;
+
+        hours.innerHTML = Math.floor(timeLeft / 3600);
+        timeLeft = timeLeft % 3600;
+
+        minutes.innerHTML = Math.floor(timeLeft / 60);
+      }, 1000);
+    </script>
+ 
+ <script>
+      
+
+  $(document).ready(function () {
+
+    
+      $("#menu-close").click(function (e)						
+      {
+          
+          $("#sidebar-wrapper").toggleClass("active");			
+          e.preventDefault(); 								
+      });															
+      $("#menu-toggle").hover(function (e)							
+      {
+          $("#sidebar-wrapper").toggleClass("active", true);		
+          e.preventDefault();										
+      });
+
+      $("#menu-toggle").bind('click', function (e)					
+      {
+          $("#sidebar-wrapper").toggleClass("active", true);	
+          e.preventDefault();										
+      });															
+
+      $('#sidebar-wrapper').mouseleave(function (e)				
+   
+      {
+          
+          $('#sidebar-wrapper').toggleClass('active', false);		
+          e.stopPropagation();									
+          
+
+          e.preventDefault();										
+      });
+  });
+
+
+  $(document).ready(function () {
+
+      $('#to-top').bind('click', function () {
+          $('body,html').animate({
+              scrollTop: 0
+          },
+              2500);
+      });
+
+
+      $(function () {
+          $('a[href*=#]:not([href=#])').click(function () {
+              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  if (target.length) {
+                      $('html,body').animate({
+                          scrollTop: target.offset().top - 420
+                      }, 3500, 'easeOutBounce');
+                      return false;
+                  }
+              }
+          });
+      });
+  });
+
+
+</script>
+  </body>
+</html>
